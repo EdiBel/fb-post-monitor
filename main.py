@@ -31,8 +31,7 @@ def check_group():
             link = 'https://www.facebook.com' + a['href']
             if pid != get_last_post_id():
                 set_last_post_id(pid)
-                send_message(f"📢 פוסט חדש בקבוצת פואד:
-{link}")
+                send_message(f"📢 פוסט חדש בקבוצת פואד:\n{link}")
             break
 
 def send_message(text):
